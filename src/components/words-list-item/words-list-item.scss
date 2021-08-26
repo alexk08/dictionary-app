@@ -1,0 +1,56 @@
+.word-list-item {
+  padding: 0;
+  
+  &__link {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    color: inherit;
+    border: 5px;
+    padding: 8px 50px;
+    padding-left: 40px;
+    position: relative;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+    margin-left: 5px;
+    min-width: 150px;
+  }
+  
+  &__speech-part {
+    font-style: italic;
+    margin: 0 10px;
+    min-width: 100px;
+  }
+
+  &__definition {
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden
+  }
+
+  &__drag-handle {
+    @include no-marg-pad;
+    border: 0;
+    background-color: transparent;
+
+    position: absolute;
+    left: 15px;
+    top: 16px;
+
+    cursor: move !important; /* fallback if grab cursor is unsupported */
+    cursor: grab !important;
+    cursor: -moz-grab !important;
+    cursor: -webkit-grab !important;
+
+    svg {
+      display: block;
+      fill: $list-group-color;
+    }
+  }
+}

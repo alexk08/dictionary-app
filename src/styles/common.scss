@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+  background-color: $gray-200;
+}
+
+html {
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  @include no-marg-pad;
+}
+
+ul {
+  list-style: none;
+}

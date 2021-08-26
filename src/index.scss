@@ -1,0 +1,19 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+@import "./styles/vars.scss";
+@import "./styles/mixins.scss";
+@import "./styles/common.scss";
+
+@import "./components/app/app.scss";
+@import "./components/error-indicator/error-indicator.scss";
+@import "./components/filters/filters.scss";
+@import "./components/header/header.scss";
+@import "./components/pages/search-page/search-page.scss";
+@import "./components/search-form/search-form.scss";
+@import "./components/spinner/spinner.scss";
+@import "./components/words-list/words-list.scss";
+@import "./components/words-list-item/words-list-item.scss";
+@import "./components/pages/word-card/word-card.scss";
+@import "./components/filters/filters.scss";
+@import "./components/star-toggle/star-toggle.scss";
+@import "./components/spinner/spinner.scss";

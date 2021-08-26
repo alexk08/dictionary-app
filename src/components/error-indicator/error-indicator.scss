@@ -1,0 +1,14 @@
+.error-indicator {
+  margin: 50px;
+  text-align: center;
+
+  &__no-words {
+    font-size: 24px;
+    color: $success;
+  }
+  
+  &__404 {
+    font-size: 30px;
+    color: $danger;
+  }
+}
