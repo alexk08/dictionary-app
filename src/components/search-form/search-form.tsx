@@ -63,13 +63,13 @@ const SearchFormRedux: FC<SearchFormReduxProps> = ({
     e.preventDefault();
 
     if (isStarredWords) {
-      searchStarredWords(inputState);
+      searchStarredWords(inputState.toLowerCase());
     } else {
       setError(ErrorValue.noError);
       toggleLoading(true);
       wordsLoaded(EMPTY.ARRAY);
 
-      searchWords(inputState).then(onDataLoaded).then(onCompleteDataLoaded).catch(onError);
+      searchWords(inputState.toLowerCase()).then(onDataLoaded).then(onCompleteDataLoaded).catch(onError);
     }
     setInputState("");
   };
@@ -102,7 +102,7 @@ const SearchFormRedux: FC<SearchFormReduxProps> = ({
           onChange={onSearchChange}
           ref={searchEl}
           required
-          pattern="[a-z-]*"
+          pattern="[A-Za-z-]*"
         />
       </div>
       <button type="submit" className="btn btn-primary search-form__search-button">

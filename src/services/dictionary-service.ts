@@ -28,7 +28,6 @@ const getWords = async (values: string[]): Promise<InputWordData[]> => {
 
   const results = await Promise.all(responses.map((response) => response.json()));
 
-  console.log(results);
   return results;
 };
 

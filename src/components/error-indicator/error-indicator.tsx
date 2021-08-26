@@ -8,7 +8,7 @@ const ErrorIndicatorRedux: FC<ErrorIndicatorPropsRedux> = ({ error }) => {
   return (
     <div className="error-indicator">
       {error === ErrorValue.emptyResponse ? (
-        <span className="error-indicator__no-words">Words is not found</span>
+        <span className="error-indicator__no-words">Words were not found</span>
       ) : (
         <span className="error-indicator__404">404 Something went wrong &#128579;</span>
       )}
